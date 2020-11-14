@@ -84,7 +84,7 @@ class BxKint {
 
             copy(__DIR__ . '/resources/icons/bxkint/debug_enable.png',
                 $_SERVER['DOCUMENT_ROOT'] . '/bitrix/themes/.default/icons/bxkint/debug_enable.png');
-            copy(__DIR__ . '/resources/icons/bxkint/debug_enable.png',
+            copy(__DIR__ . '/resources/icons/bxkint/debug_disable.png',
                 $_SERVER['DOCUMENT_ROOT'] . '/bitrix/themes/.default/icons/bxkint/debug_disable.png');
         }
     }
