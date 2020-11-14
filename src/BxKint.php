@@ -42,7 +42,7 @@ class BxKint {
         /** @global Application */
         global $APPLICATION;
 
-        if(self::checkAcces()) {
+        if(self::checkAccess()) {
 
             self::checkIcons();
 
@@ -70,7 +70,7 @@ class BxKint {
         }
     }
 
-    protected static function checkAcces() {
+    protected static function checkAccess() {
 
         /** @global \CUser */
         global $USER;
