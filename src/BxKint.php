@@ -82,9 +82,9 @@ class BxKint {
         if(!file_exists($_SERVER['DOCUMENT_ROOT'] . '/bitrix/themes/.default/icons/bxkint/debug_enable.png')) {
             mkdir($_SERVER['DOCUMENT_ROOT'] . '/bitrix/themes/.default/icons/bxkint', BX_DIR_PERMISSIONS);
 
-            copy(__DIR__ . '/../resources/icons/bxkint/debug_enable.png',
+            copy(__DIR__ . '/../resources/icons/debug_enable.png',
                 $_SERVER['DOCUMENT_ROOT'] . '/bitrix/themes/.default/icons/bxkint/debug_enable.png');
-            copy(__DIR__ . '/../resources/icons/bxkint/debug_disable.png',
+            copy(__DIR__ . '/../resources/icons/debug_disable.png',
                 $_SERVER['DOCUMENT_ROOT'] . '/bitrix/themes/.default/icons/bxkint/debug_disable.png');
         }
     }
