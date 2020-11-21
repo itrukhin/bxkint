@@ -20,7 +20,10 @@ class BxKint {
     public function showInfo() {
 
         global $BX_KINT_INFO;
-        if($_SESSION[self::SESSION_KEY]) d($BX_KINT_INFO);
+        \Kint::$display_called_from = false;
+        if(self::checkAccess() && $_SESSION[self::SESSION_KEY]) {
+            d($BX_KINT_INFO);
+        }
     }
 
     public static function info($var) {
@@ -74,7 +77,14 @@ class BxKint {
 
         /** @global \CUser */
         global $USER;
-        return (is_object($USER) && $USER->IsAdmin());
+
+        if(is_object($USER)) {
+            if($USER->IsAdmin())  return true;
+            if(class_exists('CTopPanel')) {
+                return \CTopPanel::shouldShowPanel();
+            }
+        }
+        return false;
     }
 
     protected static function checkIcons() {
