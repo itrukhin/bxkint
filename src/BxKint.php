@@ -17,7 +17,7 @@ class BxKint {
         }
     }
 
-    public function showInfo() {
+    public static function showInfo() {
 
         global $BX_KINT_INFO;
         \Kint::$display_called_from = false;
