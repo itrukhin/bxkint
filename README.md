@@ -1,5 +1,9 @@
 # Вывод отладочной информации для администратора 1С-Битрикс ([Kint](https://github.com/kint-php/kint))
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/itrukhin/bxkint/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/itrukhin/bxkint/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/itrukhin/bxkint/badges/build.png?b=master)](https://scrutinizer-ci.com/g/itrukhin/bxkint/build-status/master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/itrukhin/bxkint/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
+
 В сложных информационных системах зачастую необходима одна и та же отладочная информация для анализа и 
 поиска ошибок.
 Причем эта информация нужна на продакшене, с актуальной базы. Чтобы она всегда была под рукой - 
